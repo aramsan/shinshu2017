@@ -2,11 +2,20 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title><: $title || 'shinshu2016' :></title>
+    <title><: $title || '第７回信州オフ' :></title>
     <meta http-equiv="Content-Style-Type" content="text/css" />
     <meta http-equiv="Content-Script-Type" content="text/javascript" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
+
+    <!-- OGP -->
+    <meta property="og:title" content="<: $title || '第７回信州オフ' :>">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="2016年7月17日 第7回信州オフ">
+    <meta property="og:url" content="http://http://team-matoi.com//">
+    <meta property="og:image" content="img/ogp.jpg">
+    <meta property="og:site_name" content="第７回信州オフ特設ページ">
+
     <script src="<: uri_for('/static/js/jquery-2.1.1.min.js') :>"></script>
     <link href="<: uri_for('/static/bootstrap/css/bootstrap.css') :>" rel="stylesheet" type="text/css" />
     <script src="<: uri_for('/static/bootstrap/js/bootstrap.js') :>"></script>
@@ -27,14 +36,15 @@
     <div class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">shinshu2016</a>
+                <a class="navbar-brand" href="/">第７回信州オフ</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
+                    <li><a href="#detail">オフ詳細</a></li>
+                    <li><a href="/list">参加者リスト</a></li>
+                    <li><a href="/login">ログイン</a></li>
+                    <li><a href="/logout">ログアウト</a></li>
+                    <li><a href="/share">シェア</a></li>
                 </ul>
             </div>
         </div><!-- /.container -->
@@ -43,9 +53,21 @@
         <div id="main">
             <: block content -> { } :>
         </div>
-        <footer class="footer">
-            Powered by <a href="http://amon.64p.org/">Amon2</a>
-        </footer>
-    </div>
+    </div><!-- /.container -->
+    <footer class="footer">
+        <div class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container">
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">トップ</a></li>
+                        <li><a href="/register">参加者リスト</a></li>
+                        <li><a href="/ist">参加者リスト</a></li>
+                        <li><a href="/#detail">オフ詳細</a></li>
+                        <li><a href="/inquiry">問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div><!-- /.container -->
+        </div><!-- /.navbar -->
+    </footer>
 </body>
 </html>
