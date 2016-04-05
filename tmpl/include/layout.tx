@@ -63,8 +63,9 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="/">トップ</a></li>
-                        <li><a href="/register">参加者リスト</a></li>
-                        <li><a href="/ist">参加者リスト</a></li>
+                        <li><a href="/register">参加者表明</a></li>
+                        <li><a href="/register/update">参加者表明修正</a></li>
+                        <li><a href="/list">参加者リスト</a></li>
                         <li><a href="/#detail">オフ詳細</a></li>
                         <li><a href="/inquiry">問い合わせ</a></li>
                     </ul>
