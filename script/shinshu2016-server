@@ -11,8 +11,23 @@ use shinshu2016::Web;
 use shinshu2016;
 use URI::Escape;
 use File::Path ();
+use Plack::Session::State::Cookie;
+use Plack::Session::Store::Redis;
 
 my $app = builder {
+    enable 'Session',
+        state => Plack::Session::State::Cookie->new(
+            session_key => 'shinshu2016',
+            httponly    => 1,
+            expires     => ( 60 * 60 * 24 * 30 ),
+            secure      => 0,
+        ),
+        store => Plack::Session::Store::Redis->new(
+            prefix  => 'sinshu2016',
+            host    => '127.0.0.1',
+            port    => '6379',
+            expires => ( 60 * 60 * 24 * 30),    # 30日
+        );
     enable 'Plack::Middleware::Static',
         path => qr{^(?:/static/)},
         root => File::Spec->catdir(dirname(__FILE__), '..');

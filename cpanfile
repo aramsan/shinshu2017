@@ -15,7 +15,7 @@ requires 'Text::Xslate', '2.0009';
 requires 'Time::Piece', '1.20';
 requires 'perl', '5.010_001';
 requires 'Module::Find', '0.13';
-
+requires 'Plack::Session::Store::Redis';
 on configure => sub {
     requires 'Module::Build', '0.38';
     requires 'Module::CPANfile', '0.9010';

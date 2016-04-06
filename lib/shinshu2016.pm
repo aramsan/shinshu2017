@@ -6,6 +6,7 @@ our $VERSION='0.01';
 use 5.008001;
 use shinshu2016::DB::Schema;
 use shinshu2016::DB;
+use Cache::Redis;
 
 use parent qw/Amon2/;
 # Enable project local mode.
@@ -28,6 +29,17 @@ sub db {
         );
     }
     $c->{db};
+}
+
+sub cache {
+    my $c = shift;
+    my $cache = Cache::Redis->new(
+        server             => $c->config->{cache}{server}    || '127.0.0.1:6379',
+        namespace          => $c->config->{cache}{namespace} || 'sinshu2016:',
+        default_expires_in => $c->config->{cache}{expires}   || ( 60 * 60 * 24 * 30),    # 30日
+    );
+    no strict 'refs';
+    *{ __PACKAGE__ . '::cache' } = sub {$cache};
 }
 
 1;
