@@ -10,7 +10,7 @@ base_row_class 'shinshu2016::DB::Row';
 table {
     name 'member';
     pk 'id';
-    columns qw(id name);
+    columns qw(id name email password type grade departure adult child picture message cancel created_on updated_on);
 };
 
 1;
