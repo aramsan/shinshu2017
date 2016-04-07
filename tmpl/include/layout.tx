@@ -2,19 +2,19 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title><: $title || '第７回信州オフ' :></title>
+    <title><: $title || '第6回信州オフ' :></title>
     <meta http-equiv="Content-Style-Type" content="text/css" />
     <meta http-equiv="Content-Script-Type" content="text/javascript" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
 
     <!-- OGP -->
-    <meta property="og:title" content="<: $title || '第７回信州オフ' :>">
+    <meta property="og:title" content="<: $title || '第6回信州オフ' :>">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="2016年7月17日 第7回信州オフ">
-    <meta property="og:url" content="http://http://team-matoi.com//">
-    <meta property="og:image" content="img/ogp.jpg">
-    <meta property="og:site_name" content="第７回信州オフ特設ページ">
+    <meta property="og:description" content="2016年7月17日 第6回信州オフ">
+    <meta property="og:url" content="http://team-matoi.com//">
+    <meta property="og:image" content="<: uri_for('/static/img/ogp.jpg') :>">
+    <meta property="og:site_name" content="第6回信州オフ特設ページ">
 
     <script src="<: uri_for('/static/js/jquery-2.1.1.min.js') :>"></script>
     <link href="<: uri_for('/static/bootstrap/css/bootstrap.css') :>" rel="stylesheet" type="text/css" />
@@ -36,7 +36,7 @@
     <div class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="/">第７回信州オフ</a>
+                <a class="navbar-brand" href="/">第6回信州オフ</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">

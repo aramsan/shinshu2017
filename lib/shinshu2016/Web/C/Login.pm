@@ -6,7 +6,11 @@ use utf8;
 sub login {
     my ($class, $c) = @_;
 
+    my $login = 1;
+    $c->session->set('login' => 1);
+
     return $c->render('index.tx', {
+        login => $login,
         title => "SOARER FESTIVAL 2015 | Top Page",
     });
 }
@@ -14,7 +18,11 @@ sub login {
 sub logout {
     my ($class, $c) = @_;
 
+    my $login = 0;
+    $c->session->remove('login');
+
     return $c->render('index.tx', {
+        login => undef,
         title => "SOARER FESTIVAL 2015 | Top Page",
     });
 }
