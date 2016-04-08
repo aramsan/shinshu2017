@@ -4,12 +4,21 @@
 
 <div class="jumbotron">
     <div class="container">
-        <h1>信州の夏、ソアラの夏</h1>
+        <h2>信州の夏、ソアラの夏</h2>
+        <h6>今年も信州オフで過ごす夏の一日</h6>
+        <h6>熱いメンバーと熱くソアラを語りませんか</h6>
 : if $login {
-        <p><a class="btn btn-primary right" href="/register/update" role="button">参加表明修正</a></p>
-        <p><a class="btn btn-primary right" href="/register/update" role="button">ログアウト</a></p>
+        <p><a class="btn btn-primary" href="/register/update" role="button">参加表明修正</a></p>
+        <p><a class="btn btn-primary" href="/register/update" role="button">ログアウト</a></p>
 : } else {
-        <p><a class="btn btn-primary btn-lg" href="/register/mail" role="button">登録</a></p>
+        <form class="form-signin" action="/register/mail" method="POST">
+            <label for="inputName" class="sr-only">ハンドルネームを入力してください</label>
+            <input type="text" id="inputName" name="name" class="form-control" placeholder="ハンドルネーム" required autofocus>
+            <label for="inputEmail" class="sr-only">ハンドルネームを入力してください</label>
+            <input type="email" id="inputEmail" name="email" class="form-control" placeholder="メールアドレス" required>
+            <button type="submit" class="btn btn-primary" href="/register/mail">登録</button>
+        </form>
+        <h6>すでに登録されている方はは<a href="/login">ログイン</a></h6>
 : }
     </div>     
 </div>

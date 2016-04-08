@@ -9,9 +9,9 @@ sub login {
     my $login = 1;
     $c->session->set('login' => 1);
 
-    return $c->render('index.tx', {
+    return $c->render('login.tx', {
         login => $login,
-        title => "SOARER FESTIVAL 2015 | Top Page",
+        error => "error",
     });
 }
 

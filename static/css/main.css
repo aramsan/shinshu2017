@@ -1,3 +1,16 @@
+.jumbotron {
+    text-align: center;
+}
+
+.form-signin {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.form-control {
+    margin-bottom: 5px;
+}
+
 body {
 }
 

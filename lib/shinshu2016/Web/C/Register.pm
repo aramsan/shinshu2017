@@ -13,10 +13,19 @@ sub index {
 
 sub mail {
     my ($class, $c) = @_;
+    my $entry; 
+    my $input = {
+        'email' => $c->req->param('email'),
+        'name'  => $c->req->param('name'),
+    };
 
-    return $c->render('index.tx', {
-        title => "SOARER FESTIVAL 2015 | Top Page",
-    });
+    $entry = $c->db->single('entry', { email => $input->{'email'} });
+    if ($entry) {
+        return $c->render('login.tx', {
+            entry => $entry,
+        });
+    }
+    return $c->render('register/index.tx', { items => $input } );
 }
 
 sub mail_submit {

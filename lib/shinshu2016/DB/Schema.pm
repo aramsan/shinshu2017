@@ -8,7 +8,7 @@ use Teng::Schema::Declare;
 base_row_class 'shinshu2016::DB::Row';
 
 table {
-    name 'member';
+    name 'entry';
     pk 'id';
     columns qw(id name email password type grade departure adult child picture message cancel created_on updated_on);
 };
