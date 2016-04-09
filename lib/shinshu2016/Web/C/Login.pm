@@ -8,10 +8,11 @@ sub login {
 
     my $login = 1;
     $c->session->set('login' => 1);
+    my $error;
 
     return $c->render('login.tx', {
         login => $login,
-        error => "error",
+        error => $error,
     });
 }
 

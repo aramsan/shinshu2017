@@ -9,7 +9,7 @@ my $basedir = File::Spec->rel2abs(File::Spec->catdir(dirname(__FILE__), '..'));
         {mysql_enable_utf8=>1}
     ],
     'crypt' => { 
-        'key' => "446L8EeMge7T",   
+        'key' => "6MdPu9QSE9EJBbCx",   
     },
 };
 

@@ -6,7 +6,7 @@
     <div class="container">
         <h2>ログイン</h2>
 : if $error {
-        <div class="alert alert-danger" role="alert">メールアドレスとパスワードが一致しません</div>
+        <div class="alert alert-danger" role="alert"><: $error :></div>
 : }
         <form class="form-signin" action="/login">
             <label for="inputEmail" class="sr-only">メールアドレスを入力してください</label>

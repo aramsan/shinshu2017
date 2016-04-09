@@ -1373,6 +1373,14 @@ DISTRIBUTIONS
       IPC::Signal 1.00
     requirements:
       ExtUtils::MakeMaker 0
+  Image-Imlib2-2.03
+    pathname: L/LB/LBROCARD/Image-Imlib2-2.03.tar.gz
+    provides:
+      Image::Imlib2 2.03
+    requirements:
+      ExtUtils::CBuilder 0
+      Module::Build 0.20
+      Test::More 0.01
   JSON-2.90
     pathname: M/MA/MAKAMAKA/JSON-2.90.tar.gz
     provides:

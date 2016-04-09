@@ -19,10 +19,7 @@ any '/logout' => 'Login#logout';
 
 # 参加登録系
 any '/register' => 'Register#index';
-any '/register/mail' => 'Register#mail';
-post '/register/mailok' => 'Register#mail_submit';
-any '/register/update' => 'Register#update';
-post '/register/ok' => 'Register#ok';
+any '/register/submit' => 'Register#submit';
 
 # 参加者リスト
 get '/list' => 'List#index';

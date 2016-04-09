@@ -17,6 +17,7 @@ requires 'perl', '5.010_001';
 requires 'Module::Find', '0.13';
 requires 'Plack::Session::Store::Redis';
 requires 'DBD::mysql';
+requires 'Image::Imlib2';
 on configure => sub {
     requires 'Module::Build', '0.38';
     requires 'Module::CPANfile', '0.9010';

@@ -7,6 +7,7 @@ use 5.008001;
 use shinshu2016::DB::Schema;
 use shinshu2016::DB;
 use Cache::Redis;
+use Crypt::CBC;
 
 use parent qw/Amon2/;
 # Enable project local mode.
@@ -40,6 +41,23 @@ sub cache {
     );
     no strict 'refs';
     *{ __PACKAGE__ . '::cache' } = sub {$cache};
+}
+
+sub crypt {
+    my $c = shift;
+    if (!exists $c->{crypt}) {
+        my $conf = $c->config->{crypt}
+            or die "Missing configratuion about Crypt";
+        $c->{crypt} = Crypt::CBC->new(
+            -key         => $conf->{key},
+            -keysize     => 16,
+            -literal_key => 1,
+            -cipher      => "Rijndael",
+            -iv          => '0000000000000000',
+            -header      => 'none',
+        );
+    }
+    $c->{crypt};
 }
 
 1;
