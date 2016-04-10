@@ -20,33 +20,117 @@
         </form>
         <h6>すでに登録されている方はは<a href="/login">ログイン</a></h6>
 : }
+    <p></p>
+    <h6>2016年7月17日 長野県塩尻市 チロルの森 主催:チーム纏</h6>
     </div>     
 </div>
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <h2>新着情報</h2>
+            <div class="text-center infobox">
+                <h2>新着情報</h2>
+<pre class="text-center">
+2016.4.10 サイトオープン
+</pre>
+            </div>
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container" id="detail">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <h2>詳細情報</h2>
+            <div class="text-center infobox">
+                <h2>詳細情報</h2>
+<pre class="text-left">
+開催日時　：　7月　17日 日曜日　雨天決行！！
+開催時刻　：　AM10:00～PM16:00
+　　 　　　　※入場・受付開始AM9:00～　
+　　　　　　 ※会場が17時閉園となりますので17時完全撤収となります。
+　　　　　　 ※当日のタイムスケジュール
+                    9：00　　入場・受付開始
+                   10：00　　開会式
+                   15：00　　大抽選会
+                   15：30　　閉会式
+                   17：00　　完全撤収！！！！
+開催場所　：　信州塩尻農業公園チロルの森　(http://www.tirol.gr.jp/)  
+参加費      ：  1000円（同乗者の方は一人に付き500円）
+                ※例　運転手+同乗者2名の場合。1000+500+500で2000円となります。
+参加資格　：　ALL SOARER （10～40系）＆LEXUS SC
+ 　             ※他車種の方でも参加(見学)可能ですが駐車エリアは別となります。
+
+※チロルの森は『欧州オーストリア・チロル地方をモチーフとした、標高1,000mにある総合テーマパークです。本場の製造を元に作った自家製のビールや濃厚なアイスクリーム、ジューシーなソーセージが楽しめます。また、石窯で焼いた本格的なピザやパン。豊富なメニューのレストラン、体験教室やアトラクションなど、「見て・触れて・食べて」五感で楽しめる施設です』のでご家族で楽しめるかと思います！！！！
+
+【飲食及びお土産などは施設内を利用できます！！】
+◎人数にもよりますが焼肉などの予約もできるみたいです。詳しくは施設HPをご覧ください。
+◎こちらでは飲食に関しての予約等は行いませんので各自で宜しくお願いします。
+◎お昼時などは混雑が予想されますので時間をずらしてお食事されることをおススメします。
+
+【参加人数把握の為、参加表明にご協力お願いします！！】
+◎信州オフは事前エントリー制となっておりますので参加表明をしてください。
+◎参加表明されてませんと入場時に当日チケットとなり団体割引対象外となる場合があります。
+◎こちらのページのエントリーフォームより参加表明ができます。
+
+【当日はサインペンとネームタグホルダーをご用意ください！！】
+◎入場時にネームタグとエントリーシートをお渡しします。ネームタグにはご自身のハンドルネームや名前、エントリーシートにはお車の情報などをお書きください！！！
+
+【入場時にお渡しします数字の書かれた紙を失くさないようにして下さい！！！！】
+◎豪華絢爛（かもしれない）の景品が当たる抽選会の際必要となります。
+◎失くされますと再発行はできませんのでよろしくお願いします。
+
+【先着100名様には素敵な参加記念品をご用意しております！！！】
+◎参加車両1台につき1個となります。
+◎無くなり次第終了となりますのでよろしくお願いします。
+
+【マナーのある楽しいオフ会にする為、以下の事を守って下さい！！！！】
+◎ソアラオンリーのオフ会です。ソアラ以外で参加される方は指定された場所に駐車してください。
+◎公共の施設で季節柄家族連れの方が利用しますので、空吹かしや暴走などの迷惑行為はご遠慮下さい。
+◎施設入場料をお支払する条件で会場をお借りしております。
+例年、何かと理由を付けて参加費の支払いを拒んたり参加人数をごまかしチケットの使い回しなど不正行為を行う方がいて大変迷惑しております。
+◎当日は各型式(10、20、30、40、SC)毎に並んで頂く予定です。係りの者が案内いたしますので指示に従ってください。（※後日大まかな配置図をアップします。）
+◎同型式でグループごと友達同士で並べたい方は待機場所にて人数が揃ってから入場するようにしてください。
+◎当然ですが飲酒等は絶対禁止です。
+◎駐車場内では原則食事は禁止です。
+◎ゴミは各自持ち帰るようよろしくお願いします。
+◎会場は多くのカーミーティングのメッカとなっております。たった一人の迷惑行為が多くのカーファンの迷惑になりますのでご協力のほどよろしくお願いします。
+
+
+
+
+～第6回ソアラ信州オフはオフ会の旨を会場様と打ち合わせの上、会場使用の許可を取っております！！！～
+</pre>
+            </div>
         </div>
     </div>
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-md-4">
-            <div style="background: #888888; width:250px; height:250px; margin: 0 auto;">ギャラリー</div>
+        <div class="col-md-4 link-box">
+            <div class="link-box-inner">ギャラリー
+                <a href="/gallery">
+                    <img src="/static/img/gallery.jpg">
+                </a>
+            </div>
         </div>
-        <div class="col-md-4">
-            <div style="background: #888888; width:250px; height:250px; margin: 0 auto;">チロルの森</div>
+        <div class="col-md-4 link-box">
+            <div class="link-box-inner">チロルの森
+                <a href="http://www.tirol.gr.jp/" target="_blank">
+                    <img src="http://www.tirol.gr.jp/img/02.jpg" width="250px">
+                    <img src="http://www.tirol.gr.jp/img/05.jpg" width="250px" style="max-height: 108px;">
+                </a>
+            </div>
         </div>
-        <div class="col-md-4">
-            <div style="background: #888888; width:250px; height:250px; margin: 0 auto;">信州観光</div>
-
+        <div class="col-md-4 link-box">
+            <div class="link-box-inner">信州観光
+                <a href="http://www.shinshu-dc.net" target="_blank">
+                    <img src="http://www.shinshu-dc.net/sites/default/files/2016/spring/gnavi/topimg.jpg" width="250px">
+                </a>
+                <a href="http://www.nagano-tabi.net/" target="_blank">
+                    <img src="http://www.nagano-tabi.net/themes/sawayaka/images/header/site_rogo.jpg" width="250px">
+                </a>
+                <a href="http://www.the-shinshu.com/" target="_blank">
+                    <img src="http://www.the-shinshu.com/index/157nozawa.jpg" width="250px">
+                </a>
+            </div>
         </div>
     </div>
 </div>

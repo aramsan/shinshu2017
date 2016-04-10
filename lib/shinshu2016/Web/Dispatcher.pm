@@ -27,7 +27,8 @@ get '/list' => 'List#index';
 get '/list/' => 'List#index';
 
 # シェア
-get '/share' => 'Share#index';
+get '/share' => 'Static#share';
+get '/gallery' => 'Static#gallery';
 
 # 管理画面
 any '/admin' => 'Admin#index';

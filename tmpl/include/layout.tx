@@ -11,7 +11,7 @@
     <!-- OGP -->
     <meta property="og:title" content="<: $title || '第6回信州オフ' :>">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="2016年7月17日 第6回信州オフ">
+    <meta property="og:description" content="2016年7月17日 第6回ソアラ信州オフ 主催:チーム纏">
     <meta property="og:url" content="http://team-matoi.com//">
     <meta property="og:image" content="<: uri_for('/static/img/ogp.jpg') :>">
     <meta property="og:site_name" content="第6回信州オフ特設ページ">
@@ -40,7 +40,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#detail">オフ詳細</a></li>
+                    <li><a href="/#detail">オフ詳細</a></li>
                     <li><a href="/list">参加者リスト</a></li>
 : if $login {
                     <li><a href="/logout">ログアウト</a></li>
@@ -52,19 +52,19 @@
             </div>
         </div><!-- /.container -->
     </div><!-- /.navbar -->
-    <div class="container">
-        <div id="main">
-            <: block content -> { } :>
-        </div>
-    </div><!-- /.container -->
+    <: block content -> { } :>
+    <div class="row">
+        <div class="text-center" style="padding: 10px 0 60px;">運営:チーム纏</div>
+    </div>
     <footer class="footer">
         <div class="navbar navbar-default navbar-fixed-bottom">
             <div class="container">
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="/">トップ</a></li>
-                        <li><a href="/register">参加者表明</a></li>
-                        <li><a href="/register/update">参加者表明修正</a></li>
+: if $login {
+                        <li><a href="/register">参加者表明修正</a></li>
+: }
                         <li><a href="/list">参加者リスト</a></li>
                         <li><a href="/#detail">オフ詳細</a></li>
                         <li><a href="/inquiry">問い合わせ</a></li>

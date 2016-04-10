@@ -16,15 +16,12 @@ sub index {
 
     $c->session->remove('register');
     my $input = &_input($c);
-use Data::Dumper;
-print Dumper($input) . "\n";   
     my $id = $c->session->get('login');
     #  ログインしていたら更新
     if ($id) {
         $input = $c->db->single('entry', { id => $id })->get_columns;
         $c->session->set('register'=>1);
         $input->{'email'} = $c->crypt->decrypt_hex($input->{email});
-print Dumper($input)."\n";
         return $c->render('register/form.tx', { items => $input } );
     }
     # 登録済みのメアドで登録しようとするとログイン画面へ
