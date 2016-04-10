@@ -15,6 +15,7 @@ get '/' => 'Root#index';
 
 # ログイン
 any '/login'  => 'Login#login';
+any '/logini/check'  => 'Login#check';
 any '/logout' => 'Login#logout';
 
 # 参加登録系

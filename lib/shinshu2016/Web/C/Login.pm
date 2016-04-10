@@ -5,15 +5,28 @@ use utf8;
 
 sub login {
     my ($class, $c) = @_;
+    return $c->render('login.tx');
+}
 
-    my $login = 1;
-    $c->session->set('login' => 1);
-    my $error;
-
-    return $c->render('login.tx', {
-        login => $login,
-        error => $error,
-    });
+sub check {
+    my ($class,$c) = @_;
+    my $input = {
+        email    => $c->crypt->encrypt_hex($c->req->param('email')),
+        password => $c->crypt->encrypt_hex($c->req->param('password')),
+    };
+use Data::Dumper;
+print Dumper($input)."\n";
+    my $entry = $c->db->single('entry', $input);
+    if ($entry) {
+        my $id = $entry->get_column('id');
+        $c->session->set( 'login' => $id );
+        return $c->redirect('/');
+    } else {
+        my $error = "メールアドレスかパスワードが間違っています。";
+        return $c->render('login.tx', {
+            error => $error,
+        });
+    }
 }
 
 sub logout {
