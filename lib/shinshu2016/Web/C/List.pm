@@ -10,6 +10,7 @@ sub index {
     my @list = $c->db->search('entry');
     return $c->render('list.tx', {
         list => \@list,
+        login => $login.
     });
 }
 
