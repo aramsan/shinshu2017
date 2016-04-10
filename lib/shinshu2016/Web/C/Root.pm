@@ -10,7 +10,6 @@ sub index {
 
     return $c->render('index.tx', {
         login => $login,
-        title => "SOARER FESTIVAL 2015 | Top Page",
     });
 }
 
