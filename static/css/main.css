@@ -19,6 +19,11 @@ h2 {
     color: #FFF;
 }
 
+h3 {
+    margin-top: 5px;
+    color: #FFF;
+}
+
 h4 {
     padding-top: 15px;
     color: #FFF;
@@ -54,6 +59,31 @@ h6 {
 
 .infobox {
     background-color: #140661;
+}
+
+.list-item {
+    background: #140661;
+    min-height: 150px;
+    margin: 10px;
+}
+
+.list-tag {
+    background: #ccc;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+.list-tags {
+    padding: 20px 0 0;
+}
+
+.list-text {
+    color: #fff;
+}
+
+.list-img {
+    margin: 10px;
 }
 
 body {

@@ -1,0 +1,24 @@
+: cascade "include/layout.tx" { title => "参加者リスト | 第6回信州オフ" }
+
+: override content -> {
+
+<div class="container">
+: for $list -> $item {
+    <div class="row list-item">
+            <div class="col-sm-3 col-sm-offset-1">
+                <img src="/static/thumbnail/<: $item.picture :>" class="list-img">
+                <h3><: $item.name :></h3>
+            </div>
+            <div class="col-sm-7">
+                <p class="list-tags">
+                    <span class="list-tag"><: $item.type :></span>
+                    <span class="list-tag"><: $item.grade :></span>
+                    <span class="list-tag"><: $item.departure :></span>
+                </p>
+                <p class="list-text"><: $item.message | html_line_break :></p>
+                <p class="list-text text-right">大人：<: $item.adult :>人　子供：<: $item.child :>人</p>
+            </div>
+    </div>
+: }
+</div>
+: }

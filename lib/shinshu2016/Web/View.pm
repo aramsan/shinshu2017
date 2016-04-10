@@ -35,7 +35,8 @@ sub make_instance {
         'module'   => [
             'Text::Xslate::Bridge::Star',
             'shinshu2016::Web::ViewFunctions',
-        ],
+            'Text::Xslate::Bridge::TT2Like', 
+       ],
         'function' => {
         },
         ($context->debug_mode ? ( warn_handler => sub {
