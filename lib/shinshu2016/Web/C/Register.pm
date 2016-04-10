@@ -43,7 +43,8 @@ sub submit {
     return $c->redirect('/') unless $c->session->get('register');
     $c->session->remove('register');
 
-    my $input = &_input($c);
+    my $input = _input($c);
+print Dumper($input)."\n";
     my $id = $c->session->get('login');
     if ($id) {
         $input->{id} = $id;
@@ -53,6 +54,8 @@ sub submit {
 print Dumper($insert->id)."\n";
         $c->session->set('login'=> $insert->id);
     }
+    $input->{email} = $c->crypt->decrypt_hex($input->{email});
+print Dumper($input)."\n";
     return $c->render('register/submit.tx', {
         items => $input,
     });
