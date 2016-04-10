@@ -16,6 +16,7 @@ sub index {
 
     $c->session->remove('register');
     my $input = &_input($c);
+
     my $id = $c->session->get('login');
     #  ログインしていたら更新
     if ($id) {
@@ -32,6 +33,7 @@ sub index {
             email => $input->{'email'},
         });
     }
+    return $c->redirect('/') unless ($input->{eamil} or $input->{name});
     $c->session->set('register'=>1);
     return $c->render('register/form.tx', { items => $input } );
 }
