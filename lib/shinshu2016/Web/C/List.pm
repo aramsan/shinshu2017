@@ -9,7 +9,7 @@ sub index {
 
     my @list = $c->db->search('entry');
     return $c->render('list.tx', {
-        login => $login.
+        login => $login,
         list => \@list,
     });
 }
