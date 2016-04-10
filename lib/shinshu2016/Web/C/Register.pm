@@ -21,9 +21,10 @@ print Dumper($input) . "\n";
     my $id = $c->session->get('login');
     #  ログインしていたら更新
     if ($id) {
-        $input = $c->db->single('entry', { id => $id });
+        $input = $c->db->single('entry', { id => $id })->get_columns;
         $c->session->set('register'=>1);
-        $input->{'email'} = $c->crypt->decrypt_hex($input->email);
+        $input->{'email'} = $c->crypt->decrypt_hex($input->{email});
+print Dumper($input)."\n";
         return $c->render('register/form.tx', { items => $input } );
     }
     # 登録済みのメアドで登録しようとするとログイン画面へ
@@ -44,21 +45,16 @@ sub submit {
     $c->session->remove('register');
 
     my $input = _input($c);
-print Dumper($input)."\n";
     my $id = $c->session->get('login');
     if ($id) {
         $input->{id} = $id;
         _update($c,$input);
     } else {
         my $insert = _insert($c,$input);
-print Dumper($insert->id)."\n";
         $c->session->set('login'=> $insert->id);
     }
     $input->{email} = $c->crypt->decrypt_hex($input->{email});
-print Dumper($input)."\n";
-    return $c->render('register/submit.tx', {
-        items => $input,
-    });
+    return $c->render('register/submit.tx', { items => $input });
 }
 
 sub _input {
