@@ -19,11 +19,6 @@ h2 {
     color: #FFF;
 }
 
-h3 {
-    margin-top: 5px;
-    color: #FFF;
-}
-
 h4 {
     padding-top: 15px;
     color: #FFF;
@@ -57,6 +52,16 @@ h6 {
     color: #FFF;
 }
 
+.list-name {
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.1;
+    padding: 0 0;
+    margin: 0 0;
+    color: #140661;
+}
+
 .infobox {
     background-color: #140661;
 }
@@ -68,10 +73,9 @@ h6 {
 }
 
 .list-tag {
-    background: #ccc;
+    color: #888;
     font-size: 14px;
-    padding: 5px 10px;
-    margin: 0 5px;
+    margin-left: 10px;
 }
 
 .list-tags {
@@ -79,11 +83,15 @@ h6 {
 }
 
 .list-text {
-    color: #fff;
+    color: #000;
 }
 
 .list-img {
     margin: 10px;
+}
+
+.thumbnail {
+    background: #f5f5f5;
 }
 
 body {

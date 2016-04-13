@@ -39,10 +39,11 @@
                 <a class="navbar-brand" href="/">第6回信州オフ</a>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-right">
                     <li><a href="/#detail">オフ詳細</a></li>
                     <li><a href="/list">参加者リスト</a></li>
 : if $login {
+                    <li><a href="/register">参加者表明修正</a></li>
                     <li><a href="/logout">ログアウト</a></li>
 : } else {
                     <li><a href="/login">ログイン</a></li>
@@ -60,13 +61,14 @@
         <div class="navbar navbar-default navbar-fixed-bottom">
             <div class="container">
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav navbar-right">
                         <li><a href="/">トップ</a></li>
+                        <li><a href="/#detail">オフ詳細</a></li>
+                        <li><a href="/list">参加者リスト</a></li>
 : if $login {
                         <li><a href="/register">参加者表明修正</a></li>
+                        <li><a href="/logout">ログアウト</a></li>
 : }
-                        <li><a href="/list">参加者リスト</a></li>
-                        <li><a href="/#detail">オフ詳細</a></li>
                         <li><a href="/inquiry">問い合わせ</a></li>
                     </ul>
                 </div>

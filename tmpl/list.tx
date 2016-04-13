@@ -3,23 +3,28 @@
 : override content -> {
 
 <div class="container">
+    <div class="row text-center">
+        <h1>参加者リスト</h1>
+    </div>
 : for $list -> $item {
-    <div class="row list-item">
-            <div class="col-sm-3 col-sm-offset-1">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
+            <div class="thumbnail">
 : if $item.picture {
-                <img src="/static/thumbnail/<: $item.picture :>" class="list-img">
+                <img src="/static/upload/<: $item.picture :>">
 : }
-                <h3><: $item.name :></h3>
+                <div class="caption">
+                    <p>
+                        <span class="list-name"><: $item.name :></span>
+                        <span class="list-tag"><: $item.type :></span>
+                        <span class="list-tag"><: $item.grade :></span>
+                        <span class="list-tag"><: $item.departure :></span>
+                    </p>
+                    <p class="list-text"><: $item.message | html_line_break :></p>
+                    <p class="list-tag text-right">大人：<: $item.adult :>人　子供：<: $item.child :>人</p>
+                </div>
             </div>
-            <div class="col-sm-7">
-                <p class="list-tags">
-                    <span class="list-tag"><: $item.type :></span>
-                    <span class="list-tag"><: $item.grade :></span>
-                    <span class="list-tag"><: $item.departure :></span>
-                </p>
-                <p class="list-text"><: $item.message | html_line_break :></p>
-                <p class="list-text text-right">大人：<: $item.adult :>人　子供：<: $item.child :>人</p>
-            </div>
+        </div>
     </div>
 : }
 </div>
