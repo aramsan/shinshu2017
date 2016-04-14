@@ -73,13 +73,7 @@ sub _input {
           my $image = Image::Imlib2->load("$dst");
           my $width  = $image->get_width;
           my $height = $image->get_height;
-          if ($width > $height) {
-              $image = $image->create_scaled_image(120, int($height * 120 / $width));
-          }
-          else {
-              $image = $image->create_scaled_image(int($width * 120 / $height), 120);
-          }
-
+          $image = $image->create_scaled_image(727, int($height * 727 / $width));
           $image->set_quality(100);
           $image->save("$thumbnail_dir/$picture");
         }
