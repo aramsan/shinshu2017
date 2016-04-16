@@ -6,6 +6,9 @@
     <div class="row text-center">
         <h1>参加者リスト</h1>
     </div>
+    <div class="row text-center">
+        参加表明数:<: ($pager.current_page -1 ) * $pager.entries_per_page + $pager.entries_on_this_page :>
+    </dv>
 : for $list -> $item {
     <div class="row">
         <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
