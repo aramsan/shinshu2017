@@ -33,10 +33,10 @@ sub logout {
 
     my $login = 0;
     $c->session->remove('login');
+    $c->session->remove('admin');
 
     return $c->render('index.tx', {
         login => undef,
-        title => "SOARER FESTIVAL 2015 | Top Page",
     });
 }
 

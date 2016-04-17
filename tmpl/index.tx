@@ -1,4 +1,4 @@
-: cascade "include/layout.tx"
+: cascade "include/layout.tx" { title => "トップ | 第6回信州オフ" }
 
 : override content -> {
 
@@ -24,6 +24,9 @@
     <p>
         <a class="btn btn-primary btn-sm" href="/register" role="button">参加表明修正</a>
         <a class="btn btn-primary btn-sm" href="/logout" role="button">ログアウト</a>
+: if $admin {
+        <a class="btn btn-info btn-sm" href="/admin" role="button">管理者画面</a>
+: }
     </p>
 : }
 </div>
