@@ -12,6 +12,7 @@ CREATE TABLE IF NOT EXISTS entry (
     picture      TEXT,
     message      TEXT,
     cancel       INTEGER,
+    admin        INTEGER,
     created_on   DATETIME,
     updated_on   DATETIME 
 );

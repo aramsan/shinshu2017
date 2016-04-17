@@ -14,12 +14,11 @@ sub check {
         email    => $c->crypt->encrypt_hex($c->req->param('email')),
         password => $c->crypt->encrypt_hex($c->req->param('password')),
     };
-use Data::Dumper;
-print Dumper($input)."\n";
     my $entry = $c->db->single('entry', $input);
     if ($entry) {
-        my $id = $entry->get_column('id');
+        my $id = $entry->id;
         $c->session->set( 'login' => $id );
+        $c->session->set( 'admin' => 1 ) if $entry->admin;
         return $c->redirect('/');
     } else {
         my $error = "メールアドレスかパスワードが間違っています。";
