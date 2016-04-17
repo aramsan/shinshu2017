@@ -6,10 +6,7 @@
     <h2>信州の夏 ソアラの夏</h2>
     <h6>今年も信州オフで過ごす夏の一日</h6>
     <h6>熱いメンバーと熱くソアラを語りませんか</h6>
-: if $login {
-    <p><a class="btn btn-primary" href="/register" role="button">参加表明修正</a></p>
-    <p><a class="btn btn-primary" href="/logout" role="button">ログアウト</a></p>
-: } else {
+: if !$login {
     <form class="form-signin" action="/register" method="POST">
         <label for="inputName" class="sr-only">ハンドルネームを入力してください</label>
         <input type="text" id="inputName" name="name" class="form-control" placeholder="ハンドルネーム" required autofocus>
@@ -23,6 +20,12 @@
     <h4>第6回ソアラ信州オフ</h4>
     <h6>2016年7月17日 長野県塩尻市 チロルの森</h6>
     <h6>主催:チーム纏</h6>
+: if $login {
+    <p>
+        <a class="btn btn-primary btn-sm" href="/register" role="button">参加表明修正</a>
+        <a class="btn btn-primary btn-sm" href="/logout" role="button">ログアウト</a>
+    </p>
+: }
 </div>
 <div class="container">
     <div class="row">
