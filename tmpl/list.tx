@@ -25,8 +25,11 @@
                     </p>
                     <p class="list-text text-left"><: $item.message | html_line_break :></p>
                     <p class="list-tag text-right">大人：<: $item.adult :>人　子供：<: $item.child :>人</p>
+: if ($item.before_party) {
+                    <p class="list-tag text-right">前夜祭参加 大人：<: $item.before_adult :>人　子供：<: $item.before_child :>人</p>
+: }
 : if ( $login == $item.id) {
-                    <p class="list-text text-right"><a class="btn btn-default btn-sm" href="/register" role="button">参加表明修正</a></p>
+                    <p class="list-tag text-right"><a class="btn btn-default btn-sm" href="/register" role="button">参加表明修正</a></p>
 : }
                 </div>
             </div>

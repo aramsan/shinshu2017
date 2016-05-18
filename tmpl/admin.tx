@@ -12,6 +12,9 @@
                     <th>参加者数</th>
                     <th>大人</th>
                     <th>子供</th>
+                    <th>前夜祭</th>
+                    <th>大人</th>
+                    <th>子供</th>
                 </tr>
             </thead>
             <tbody>
@@ -20,6 +23,9 @@
                     <td><: $stats.total_adult + $stats.total_child :></td>
                     <td><: $stats.total_adult :></td>
                     <td><: $stats.total_child :></td>
+                    <td><: $stats.before_adult + $stats.before_child :></td>
+                    <td><: $stats.before_adult :></td>
+                    <td><: $stats.before_child :></td>
                 </tr>
             </tbody>
         </table>
@@ -36,6 +42,9 @@
                     <th>出発地</th>
                     <th>大人</th>
                     <th>子供</th>
+                    <th>前夜祭</th>
+                    <th>大人</th>
+                    <th>子供</th>
                     <th>キャンセル</th>
                     <th>管理者</th>
                 </tr>
@@ -50,6 +59,9 @@
                     <td><: $item.departure :></td>
                     <td><: $item.adult :></td>
                     <td><: $item.child :></td>
+                    <td><: if ($item.before_party) { :>参加<: } :></td>
+                    <td><: $item.before_adult :></td>
+                    <td><: $item.before_child :></td>
                     <td><: $item.cancel :></td>
                     <td><: $item.admin :></td>
                 </tr>
