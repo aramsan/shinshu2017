@@ -16,6 +16,6 @@ MYMETA.yml
 /_build/
 /local/
 /.carton/
-/static/thumbnail/*
+/static/thumbnail/
 /static/upload/*
 

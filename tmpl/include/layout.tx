@@ -54,7 +54,6 @@
 : } else {
                     <li><a href="/login">ログイン</a></li>
 : }
-                    <li><a href="/share">シェア</a></li>
                 </ul>
             </div>
         </div>
@@ -83,7 +82,6 @@
 : } else {
                     <li><a href="/login">ログイン</a></li>
 : }
-                    <li><a href="/share">シェア</a></li>
                 </ul>
             </div>
         </div>

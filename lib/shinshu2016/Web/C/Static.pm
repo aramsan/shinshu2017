@@ -16,7 +16,7 @@ sub gallery {
     my ($class, $c) = @_;
 
     my $login = $c->session->get('login');
-    return $c->render('index.tx', {
+    return $c->render('gallery.tx', {
         login => $login,
     });
 }
