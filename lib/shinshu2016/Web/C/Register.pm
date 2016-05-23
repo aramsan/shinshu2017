@@ -57,7 +57,7 @@ sub submit {
 }
 
 sub _input {
-    my $c = shift;
+    my ($c) = @_;
     # 画像アップロード
     my $upload = $c->req->upload('picture');
     my $picture;
@@ -77,8 +77,8 @@ sub _input {
           $image->set_quality(100);
           $image->save("$thumbnail_dir/$picture");
         }
-    }    
-    return {
+    }   
+    my $ret = {
         'email' => $c->req->param('email'),
         'name'  => $c->req->param('name'),
         'password' => $c->req->param('password') || undef,
@@ -90,10 +90,11 @@ sub _input {
         'before_party' => $c->req->param('before_party') || 0,
         'before_adult' => $c->req->param('before_adult') || 0,
         'before_child' => $c->req->param('before_child') || 0,
-        'picture' => $picture,
         'message' => $c->req->param('message') || undef,
         'updated_on' => \'now()',
     };
+    $ret->{'picture'} = $picture if $picture;
+    return $ret;
 }
 
 sub _valid_type {
