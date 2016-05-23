@@ -173,8 +173,10 @@
 >5人</option>
 </select>
 : if $items.picture {
-                                        <input type="file" id="picture" name="picture" value="<: $items.picture :>">
-                                        <span class="contain" style="background-image: url('/static/thumbnail/<: $items.picture :>')"></span>
+                                        <input type="file" class="form-control id="picture" name="picture" value="<: $items.picture :>">
+                                        <div class="thumbnail">
+                                            <img src="/static/thumbnail/<: $items.picture :>" height="60px">
+                                        </div>
 : } else {
                                         <input type="file" class="form-control" id="picture" name="picture">
 : }
