@@ -36,6 +36,7 @@
             <div class="text-center infobox">
                 <h2>新着情報</h2>
 <pre class="text-center">
+2016.7.1 前夜祭受付終了
 2016.5.22 前夜祭参加フォーム追加
 2016.5.22 ギャラリー追加
 2016.4.14 参加者リストデザイン変更
@@ -141,13 +142,13 @@
         <div class="col-md-4 link-box">
             <div class="link-box-inner">信州観光
                 <a href="http://www.shinshu-dc.net" target="_blank">
-                    <img src="http://www.shinshu-dc.net/sites/default/files/2016/spring/gnavi/topimg.jpg" width="250px">
+                    <img src="http://www.shinshu-dc.net/wp-content/themes/shinshu-dc/img/index/slide/slide01.jpg" width="250px">
                 </a>
                 <a href="http://www.nagano-tabi.net/" target="_blank">
                     <img src="http://www.nagano-tabi.net/themes/sawayaka/images/header/site_rogo.jpg" width="250px">
                 </a>
                 <a href="http://www.the-shinshu.com/" target="_blank">
-                    <img src="http://www.the-shinshu.com/index/157nozawa.jpg" width="250px">
+                    <img src="http://www.the-shinshu.com/index/158.jpg" width="250px">
                 </a>
             </div>
         </div>
