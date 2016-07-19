@@ -5,24 +5,13 @@
 <div class="jumbotron">
     <h2>信州の夏 ソアラの夏</h2>
     <h6>今年も信州オフで過ごす夏の一日</h6>
-    <h6>熱いメンバーと熱くソアラを語りませんか</h6>
-: if !$login {
-    <form class="form-signin" action="/register" method="POST">
-        <label for="inputName" class="sr-only">ハンドルネームを入力してください</label>
-        <input type="text" id="inputName" name="name" class="form-control" placeholder="ハンドルネーム" required autofocus>
-        <label for="inputEmail" class="sr-only">ハンドルネームを入力してください</label>
-        <input type="email" id="inputEmail" name="email" class="form-control" placeholder="メールアドレス" required>
-        <button type="submit" class="btn btn-primary" href="/register">参加登録へ</button>
-    </form>
-    <h6>すでに登録されている方はは<a href="/login">ログイン</a></h6>
-: }
+    <h6>開催にご協力いただきありがとうございました</h6>
     <p></p>
     <h4>第6回ソアラ信州オフ</h4>
     <h6>2016年7月17日 長野県塩尻市 チロルの森</h6>
     <h6>主催:チーム纏</h6>
 : if $login {
     <p>
-        <a class="btn btn-primary btn-sm" href="/register" role="button">参加表明修正</a>
         <a class="btn btn-primary btn-sm" href="/logout" role="button">ログアウト</a>
 : if $admin {
         <a class="btn btn-info btn-sm" href="/admin" role="button">管理者画面</a>
@@ -36,6 +25,7 @@
             <div class="text-center infobox">
                 <h2>新着情報</h2>
 <pre class="text-center">
+2016.7.17 無事終了　ご協力ありがとうございました
 2016.7.1 前夜祭受付終了
 2016.5.22 前夜祭参加フォーム追加
 2016.5.22 ギャラリー追加
@@ -51,6 +41,12 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="text-center infobox">
                 <h2>詳細情報</h2>
+                <img src="/static/img/20160718-1.jpg">
+<pre class="text-left">
+ソアラ信州オフに関わった全ての皆様、本当にありがとうございました。
+総勢141台もの参加があり、北は北海道、南は九州まで日本全国から
+信州に集まって頂きスタッフ全員非常に感謝しております。
+</pre>
 <pre class="text-left">
 開催日時
 　7月　17日 日曜日　雨天決行！！
