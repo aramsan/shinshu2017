@@ -87,9 +87,6 @@ sub _input {
         'departure' => $c->req->param('departure') || undef,
         'adult' => $c->req->param('adult') || 1,
         'child' => $c->req->param('child') || 0,
-        'before_party' => $c->req->param('before_party') || 0,
-        'before_adult' => $c->req->param('before_adult') || 0,
-        'before_child' => $c->req->param('before_child') || 0,
         'message' => $c->req->param('message') || undef,
         'updated_on' => \'now()',
     };

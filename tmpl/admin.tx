@@ -1,4 +1,4 @@
-: cascade "include/layout.tx" { title => "ログイン | 第6回信州オフ" }
+: cascade "include/layout.tx" { title => "管理メニュー | 第7回信州オフ" }
 
 : override content -> {
 

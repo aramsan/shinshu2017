@@ -1,4 +1,4 @@
-: cascade "include/layout.tx" { title => "参加者リスト | 第6回信州オフ" }
+: cascade "include/layout.tx" { title => "参加者リスト | 第7回信州オフ" }
 
 : override content -> {
 
@@ -25,9 +25,6 @@
                     </p>
                     <p class="list-text text-left"><: $item.message | html_line_break :></p>
                     <p class="list-tag text-right">大人：<: $item.adult :>人　子供：<: $item.child :>人</p>
-: if ($item.before_party) {
-                    <p class="list-tag text-right">前夜祭参加 大人：<: $item.before_adult :>人　子供：<: $item.before_child :>人</p>
-: }
                 </div>
             </div>
         </div>

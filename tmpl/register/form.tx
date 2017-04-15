@@ -107,11 +107,6 @@
 : }
 >5人</option>
 </select><br>
-        　　　※ 前夜祭の受付は終了しました
-        <input type="hidden" id="inputBefore" name="before_party" value="<: $items.before_party :>">
-        <input type="hidden" name="before_adult" value="<: $items.before_adult :>">
-        <input type="hidden" name="before_child" value="<: $items.before_child :>">
-</select>
 : if $items.picture {
                                         <input type="file" class="form-control id="picture" name="picture" value="<: $items.picture :>">
                                         <div class="thumbnail">
