@@ -19,6 +19,7 @@ requires 'Plack::Session::Store::Redis';
 requires 'DBD::mysql';
 requires 'Image::Imlib2';
 requires 'Text::Xslate::Bridge::TT2Like';
+requires 'Cache::Redis';
 on configure => sub {
     requires 'Module::Build', '0.38';
     requires 'Module::CPANfile', '0.9010';
