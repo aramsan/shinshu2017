@@ -108,7 +108,7 @@
 >5人</option>
 </select><br>
         後夜祭<br>
-        　<input type="checkbox" name="after" value="1"<: if $items.after_party { :>checked<: } :>>後夜祭に参加する<br>
+        　<input type="checkbox" name="after" value="1"<: if $items.after { :>checked<: } :>>後夜祭に参加する<br>
         　大人<select name="after_adult">
 <option value="0"
 : if ($items.after_adult == 0) {
