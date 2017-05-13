@@ -21,6 +21,15 @@ sub gallery {
     });
 }
 
+sub month3 {
+    my ($class, $c) = @_;
+
+    my $login = $c->session->get('login');
+    return $c->render('3month.tx', {
+        login => $login,
+    });
+}
+
 sub inquiry {
     my ($class, $c) = @_;
 

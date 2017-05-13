@@ -11,9 +11,9 @@
     <!-- OGP -->
     <meta property="og:title" content="<: $title || '第7回信州オフ' :>">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="2017年8月12日 第7回ソアラ信州オフ 主催:チーム纏">
-    <meta property="og:url" content="http://team-matoi.com//">
-    <meta property="og:image" content="<: uri_for('/static/img/shinshu2016image.png') :>">
+    <meta property="og:description" content="<: $og_description || '2017年8月12日 第7回ソアラ信州オフ 主催:チーム纏' :>">
+    <meta property="og:url" content="<: $og_url || 'http://team-matoi.com/' :>">
+    <meta property="og:image" content="<: $og_image || uri_for('/static/img/shinshu2016image.png') :>">
     <meta property="og:site_name" content="第6回信州オフ特設ページ">
 
     <script src="<: uri_for('/static/js/jquery-2.1.1.min.js') :>"></script>

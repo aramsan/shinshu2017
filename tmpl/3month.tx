@@ -1,0 +1,168 @@
+: cascade "include/layout.tx" { title => "信州オフまであと3ヶ月 ツーリングも楽しめる第7回ソアラ信州オフ", og_image => "http://team-matoi.com/static/img/3month1.png", og_url => "http://team-matoi.com/3month", og_description => "第7回ソアラ信州オフまであと3ヶ月！ツーリングも楽しめる信州オフ、後夜祭のあとはツーリングも楽しみもう" }
+
+: override content -> {
+
+<div class="jumbotron">
+    <div class="container">
+        <h2>信州オフまで3ヶ月</h2>
+        <h6>信州オフもツーリングも楽しもう!</h6>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 text-right">
+            <p>2017.5.14</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>ツーリングも楽しめる信州オフ</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <p></p>
+            <p>さて、信州オフまであと3ヶ月とせまってまいりました。おかげさまで、すでに数十台の参加表明をいただき、今年も盛り上がりそうな雰囲気がすでに出ています。</p>
+            <p>今回は、この信州オフのもう一つの楽しみ方としてツーリングにフォーカスしたいと思います。</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="thumbnail">
+               <img src="<: uri_for('/static/img/3month2.png') :>">
+           </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>信州にはたくさんのツーリングスポットが</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+　　　　　　<p>信州には、軽井沢、志賀高原、浅間、美ヶ原など、日本中から集まってくるツーリングスポットがあります。これを読んでくださっている皆さんの中にも、信州でツーリングを楽しんだことがある方多くいらっしゃると思います。もちろん、ここ数年毎年信州オフを開催ている、チロルの森の近くにもたくさんのツーリングスポットがあります。</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>諏訪湖</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="thumbnail">
+               <img src="<: uri_for('/static/img/3month4.png') :>">
+           </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <p>チロルの森からすぐ北にある、信州最大の湖である諏訪湖。急な坂道を大木にまたがって降りることで有名な御柱祭や、日本最大規模の花火大会が行われることでご存じの方も多くいると思います。諏訪湖には周回できる道路や、温泉施設もあり、走るだけでなく、休むこともできるおすすめスポットです。周りには美術館や、遊覧船など楽しめる施設もあり、観光も楽しめます。</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>ビーナスライン</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="thumbnail">
+               <img src="<: uri_for('/static/img/3month5.png') :>">
+           </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <p>ビーナスラインは、長野県茅野市から、同県上田市の美ヶ原高原美術館に至る全長約76kmの観光道路です。諏訪湖の北側からも入り口があり、多くの絶景を眺めながら、ツーリングを楽しむことができます。運が良ければ、雲海を見ることができます。高原を走る道路ならではの楽しみ方ですね。この時期のビーナスラインは訪れる方が多く、時間を間違えると大渋滞に巻き込まれてしまいます。おすすめは朝6時頃から上っていき、霧ヶ峰高原のパーキングでゆっくりするコースです。地元では朝ビと呼ばれており、純粋にツーリングを楽しみたい方、そして世界の名車・迷車が集まる場として親しまれています。後夜祭に参加し、一泊した後、早朝から登るなんていかがでしょうか。ただし、後夜祭での深酒はできないというデメリットもありますね。</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>ということで告知です</h3>
+        </div>
+    </div>
+: if !$login {
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4 text-center">
+            <div class="jumbotron">
+                <form action="/register" method="POST">
+                    <input type="text" id="inputName" name="name" class="form-control" placeholder="ハンドルネーム" required autofocus>
+                    <input type="email" id="inputEmail" name="email" class="form-control" placeholder="メールアドレス" required>
+                    <button type="submit" class="btn btn-primary" href="/register">参加登録へ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+: }
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <pre>
+信州オフまで3カ月ですね～(^^♪
+
+
+そんな訳で実行委員会からのお知らせです！！！！
+
+
+開催日時　：　8月　12日 土曜日　雨天決行！！
+
+開催時刻　：　AM10:00～PM16：30
+※入場・受付開始AM8:00～　
+※会場が17時閉園となりますので17時完全撤収となります。
+　　　　　　 
+開催場所　：　信州塩尻農業公園チロルの森　(http://www.tirol.gr.jp/) 
+
+参加費 ： 1000円（同乗者の方は一人に付き500円）
+※例　運転手+同乗者2名の場合。1000+500+500で2000円となります。
+※ソアラ以外のお車で見学者の方は一律500円となります。
+
+参加資格　：　ALL SOARER （10～40系）＆LEXUS SC。
+　　　　　　　：　それらの車種をこよなく愛される方。
+※他車種の方でも参加(見学)可能ですが駐車エリアは別となります。
+
+
+【信州オフは事前エントリー制となっておりますので参加表明にご協力ください！！】
+
+◎参加表明は特設サイト（http://team-matoi.com/）よりエントリーできます。
+※オフ会の詳細や注意事項などもこちらよりご確認いただけます！！！
+※周辺の観光マップ、チロルの森の紹介、過去の信州オフのダイジェストなどもご覧になれます(^^)/
+
+◎恒例となっております後夜祭の参加表明もこちらよりエントリーできます。
+※既に参加表明されている方で参加希望の方は修正画面より参加表明できますのでよろしくお願いします！！！
+
+【信州オフ恒例後夜祭のご案内！！！！】
+
+日時→8月12日(土)　19：00～
+場所→安喜センター　(例年通りの場所です(^^♪)
+　　　　　
+★18：30に最寄ホテル(ルートイン塩尻北様、チサンイン塩尻北様)より送迎バスが出ます。
+★募集締め切りは7月31日です。（但し、定員となり次第早期に募集を締め切ります。）
+★夏の大型連休中となりますので早めに宿泊先を予約することをお勧めします。
+★ご不明な点などございましたらお近くの信州メンバー及び纏までご連絡ください！！！
+
+
+初参加の方が多いのも信州オフの特徴となっております！！！！
+
+大きなイベントではありませんが各地のソアラ乗りと熱い交流・情報交換ができるオフ会かと思います！！！！
+
+行ってみようかなと思っている方。
+
+行かないで後悔するより、行って一生の思い出を作ってみませんか？？？？
+            </pre>
+        </div>
+    </div>
+: if !$login {
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4 text-center">
+            <div class="jumbotron">
+                <form action="/register" method="POST">
+                    <input type="text" id="inputName" name="name" class="form-control" placeholder="ハンドルネーム" required autofocus>
+                    <input type="email" id="inputEmail" name="email" class="form-control" placeholder="メールアドレス" required>
+                    <button type="submit" class="btn btn-primary" href="/register">参加登録へ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+: }
+</div>
+: }
