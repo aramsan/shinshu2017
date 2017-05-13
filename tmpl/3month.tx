@@ -1,4 +1,4 @@
-: cascade "include/layout.tx" { title => "信州オフまであと3ヶ月 ツーリングも楽しめる第7回ソアラ信州オフ", og_image => "http://team-matoi.com/static/img/3month1.png", og_url => "http://team-matoi.com/3month", og_description => "第7回ソアラ信州オフまであと3ヶ月！ツーリングも楽しめる信州オフ、後夜祭のあとはツーリングも楽しみもう" }
+: cascade "include/layout.tx" { title => "信州オフまであと3ヶ月 ツーリングも楽しめる第7回ソアラ信州オフ", og_image => "http://team-matoi.com/static/img/3month1.png", og_url => "http://team-matoi.com/announse170514", og_description => "第7回ソアラ信州オフまであと3ヶ月！ツーリングも楽しめる信州オフ、後夜祭のあとはツーリングも楽しみもう" }
 
 : override content -> {
 

@@ -29,7 +29,7 @@ get '/list/' => 'List#index';
 # シェア
 get '/share' => 'Static#share';
 get '/gallery' => 'Static#gallery';
-get '/3month' => 'Static#month3';
+get '/3month' => 'Static#announse170514';
 
 # 管理画面
 any '/admin' => 'Admin#index';
