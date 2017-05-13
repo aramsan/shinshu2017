@@ -88,6 +88,9 @@ sub _input {
         'adult' => $c->req->param('adult') || 1,
         'child' => $c->req->param('child') || 0,
         'message' => $c->req->param('message') || undef,
+        'after' => $c->req->param('after') || 0,
+        'after_adult' => $c->req->param('after_adult') || 0,
+        'after_child' => $c->req->param('after_child') || 0,
         'updated_on' => \'now()',
     };
     $ret->{'picture'} = $picture if $picture;

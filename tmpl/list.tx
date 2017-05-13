@@ -25,6 +25,9 @@
                     </p>
                     <p class="list-text text-left"><: $item.message | html_line_break :></p>
                     <p class="list-tag text-right">大人：<: $item.adult :>人　子供：<: $item.child :>人</p>
+: if $item.after {
+                    <p class="list-tag text-right">後夜祭参加　大人：<: $item.after_adult :>人　子供：<: $item.after_child :>人</p>
+: }
                 </div>
             </div>
         </div>

@@ -13,6 +13,9 @@
             <li class="list-group-item"><: $items.departure :></li>
             <li class="list-group-item">大人　<: $items.adult :>人</li>
             <li class="list-group-item">子供　<: $items.child :>人</li>
+            <li class="list-group-item">後夜祭　参加<: if $items.after {:>する<:} else {:>しない<:} :></li>
+            <li class="list-group-item">大人　<: $items.after_adult :>人</li>
+            <li class="list-group-item">子供　<: $items.after_child :>人</li>
 : if $item.picture {
             <li class="list-group-item"><img src="/static/thumbnail/<: $items.picture :> :>"></li>
 : }

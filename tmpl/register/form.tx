@@ -107,6 +107,72 @@
 : }
 >5人</option>
 </select><br>
+        後夜祭<br>
+        　<input type="checkbox" name="after" value="1"<: if $items.after_party { :>checked<: } :>>後夜祭に参加する<br>
+        　大人<select name="after_adult">
+<option value="0"
+: if ($items.after_adult == 0) {
+ selected
+: }
+>0人</option>
+<option value="1"
+: if ($items.after_adult == 1) {
+ selected
+: }
+>1人</option>
+<option value="2"
+: if ($items.after_adult == 2) {
+ selected
+: }
+>2人</option>
+<option value="3"
+: if ($items.after_adult == 3) {
+ selected
+: }
+>3人</option>
+<option value="4"
+: if ($items.after_adult == 4) {
+ selected
+: }
+>4人</option>
+<option value="5"
+: if ($items.after_adult == 5) {
+ selected
+: }
+>5人</option>
+</select>
+　小人<select name="after_child">
+<option value="0"
+: if ($items.after_child == 0) {
+ selected
+: }
+>0人</option>
+<option value="1"
+: if ($items.after_child == 1) {
+ selected
+: }
+>1人</option>
+<option value="2"
+: if ($items.after_child == 2) {
+ selected
+: }
+>2人</option>
+<option value="3"
+: if ($items.after_child == 3) {
+ selected
+: }
+>3人</option>
+<option value="4"
+: if ($items.after_child == 4) {
+ selected
+: }
+>4人</option>
+<option value="5"
+: if ($items.after_child == 5) {
+ selected
+: }
+>5人</option>
+</select><br>
 : if $items.picture {
                                         <input type="file" class="form-control id="picture" name="picture" value="<: $items.picture :>">
                                         <div class="thumbnail">
