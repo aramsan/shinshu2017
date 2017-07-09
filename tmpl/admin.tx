@@ -23,9 +23,9 @@
                     <td><: $stats.total_adult + $stats.total_child :></td>
                     <td><: $stats.total_adult :></td>
                     <td><: $stats.total_child :></td>
-                    <td><: $stats.after_adult + $stats.afger_child :></td>
-                    <td><: $stats.after_adult :></td>
-                    <td><: $stats.after_child :></td>
+                    <td><: $stats.total_after_adult + $stats.total_after_child :></td>
+                    <td><: $stats.total_after_adult :></td>
+                    <td><: $stats.total_after_child :></td>
                 </tr>
             </tbody>
         </table>

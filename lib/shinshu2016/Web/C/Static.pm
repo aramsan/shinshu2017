@@ -39,6 +39,15 @@ sub month2 {
     });
 }
 
+sub month1 {
+    my ($class, $c) = @_;
+
+    my $login = $c->session->get('login');
+    return $c->render('1month.tx', {
+        login => $login,
+    });
+}
+
 sub inquiry {
     my ($class, $c) = @_;
 

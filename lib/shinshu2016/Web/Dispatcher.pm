@@ -31,6 +31,7 @@ get '/share' => 'Static#share';
 get '/gallery' => 'Static#gallery';
 get '/announse170514' => 'Static#month3';
 get '/announse_spa' => 'Static#month2';
+get '/announse_food' => 'Static#month1';
 
 # 管理画面
 any '/admin' => 'Admin#index';

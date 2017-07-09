@@ -1,74 +1,136 @@
-: cascade "include/layout.tx" { title => "トップ | 第7回信州オフ" }
+: cascade "include/layout.tx" { title => "信州オフまであと1ヶ月。美味しいものも食べられる第7回ソアラ信州オフ", og_image => "http://team-matoi.com/static/img/1month.png", og_url => "http://team-matoi.com/announse_food", og_description => "第7回ソアラ信州オフまであと1ヶ月！美味しいものも楽しめる信州オフ、減ったお腹を美味いもので満たそう！" }
 
 : override content -> {
 
 <div class="jumbotron">
-    <h2>信州の夏 ソアラの夏</h2>
-    <h6>今年も信州オフで過ごす夏の一日</h6>
-: if !$login {
-    <form class="form-signin" action="/register" method="POST">
-        <label for="inputName" class="sr-only">ハンドルネームを入力してください</label>
-        <input type="text" id="inputName" name="name" class="form-control" placeholder="ハンドルネーム" required autofocus>
-        <label for="inputEmail" class="sr-only">ハンドルネームを入力してください</label>
-        <input type="email" id="inputEmail" name="email" class="form-control" placeholder="メールアドレス" required>
-        <button type="submit" class="btn btn-primary" href="/register">参加登録へ</button>
-    </form>
-    <h6>すでに登録されている方はは<a href="/login">ログイン</a></h6>
-: }
-    <p></p>
-    <h4>第7回ソアラ信州オフ</h4>
-    <h6>2017年8月12日 長野県塩尻市 チロルの森</h6>
-    <h6>主催:チーム纏</h6>
-: if $login {
-    <p>
-        <a class="btn btn-primary btn-sm" href="/register" role="button">参加表明修正</a>
-        <a class="btn btn-primary btn-sm" href="/logout" role="button">ログアウト</a>
-: if $admin {
-        <a class="btn btn-info btn-sm" href="/admin" role="button">管理者画面</a>
-: }
-    </p>
-: }
+    <div class="container">
+        <h2>信州オフも美味しいものも楽しもう!</h2>
+        <h6>信州オフまで1ヶ月</h6>
+    </div>
 </div>
 <div class="container">
     <div class="row">
+        <div class="col-md-8 col-md-offset-2 text-right">
+            <p>2017.7.9</p>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="text-center infobox">
-                <h2>新着情報</h2>
-<pre class="text-center">
-2017.7.9
-美味しいもの紹介追加
-
-2017.6.4
-温泉紹介追加
-
-2017.5.31
-出店希望申し込み締め切り
-
-2017.5.14
-後夜祭参加表明受付開始！
-すでに参加表明されている方も、
-参加表明修正より申し込めます
-
-2017.4.16
-サイトオープン
-</pre>
+            <h3>美味しいものも楽しめる信州オフ</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <p></p>
+            <p>さて、信州オフまであと1ヶ月とせまってまいりました。信州オフ実行委員会が架橋に入ってまいりました。前回は、温泉にフォーカスしましたが、今回は信州の美味しいものについてフォーカスしたいと思います。</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="thumbnail">
+               <img src="<: uri_for('/static/img/1month.png') :>">
+           </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>信州の美味しいもの</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+　　　　　　<p>信州には、広い県土で採れる地元の農産物である、りんごやぶどうなど有名な食べ物があります。この信州オフの時期は、下原スイカという会場ののお隣松本市波田のブランドスイカが旬を向かています。そして、このような農産物を加工したものにも、野沢菜やワインなど多くの美味しいものがあります。ここではせっかく信州に来たからには、美味しいものも楽しんでいけるように、その幾つかを紹介していきます。</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>おやき</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="thumbnail">
+               <img src="http://www.shunsaika.com/docs/ssk/images/TOP_main03.jpg">
+           </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <p>信州で手軽に楽しめる美味しいものの代表といえば「おやき」です。長野県では、その寒冷な気候から以前は米の栽培には向いていない地域でした。そこで、米の代わりに小麦やそばが栽培されていました。その小麦を使った作られた料理の代表格がこのおやきです。小麦をねって作られた皮に、野沢菜、かぼちゃ、茄子など、いろいろな具を包み、焼いて作られます。手軽に食べられる分量や、いろいろな具があるために、様々な味を楽しめるのがこのおやきの良いところです。また、このおやきはお店やお土産屋さんだけでなく、スーパーで安く購入できるため、そういった楽しみ方もあります。(画像は<a href="http://www.shunsaika.com/docs/ssk/">旬菜花ホームページより</a>より転載)</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>そば</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="thumbnail">
+               <img src="http://www.tokimeguri.jp/reporter/%E3%81%9D%E3%81%B0.jpg">
+           </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <p>信州にはいたるところに、そば畑があり春先にはきれいな白い花をつけます。信州オフの開催される8月の時期は収穫が始まる時期です。そばは信州全域で親しまれており、また地域によって特色があり、戸隠そばは全国的に有名ですが、とうじそばや、かわったところでは凍りそばというものもあります。(画像は<a href="http://www.tokimeguri.jp/" target="_blank">塩尻市環境協会</a>より転載)</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>山賊焼き</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="thumbnail">
+               <img src="http://www.tokimeguri.jp/reporter/sanzoku5.JPG">
+           </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <p>山賊焼きという料理をご存知でしょうか。新鮮な鶏肉を特性なタレに漬け込み、高温の油でまるごと豪快に揚げた料理です。山賊という名前の由来は、山賊は旅人のものを取り上げる。鶏、揚げるということで鶏肉を揚げた料理に山賊焼きと名付けました。ガッツリとした料理ですので、お腹が空いているときには良いのですが、運転前に食べると眠気の原因になるかもしれません。その場合は、お土産用の冷凍山賊焼きもありますので、そちらを買って自宅で食べるという手もあります。(画像は<a href="http://www.tokimeguri.jp/" target="_blank">塩尻市環境協会</a>より転載)</p>
+            <p>他にも信州には虫を食べる文化があり、蜂の子やイナゴの佃煮などが有名です。会場であるチロルの森の近く諏訪湖の遊覧船乗り場には、バッタソフトというイナゴがトッピングされた、キワモノのソフトクリームもあります。勇気のある方は試してみてはいかがでしょうか。他にもたくさんの美味しいものがあります。信州オフだけでなく、美味しいものも楽しみ、良い夏の思い出を作ってはいかがでしょうか。(画像は<a href="http://news.mynavi.jp/articles/2013/10/11/suwako/">マイナビニュース　「ネットのおかげ」で話題のバッタソフト、発売経緯を聞く</a> より転載)</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="thumbnail">
+               <img src="http://n.mynv.jp/articles/2013/10/11/suwako/images/001l.jpg">
+           </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>ということで告知です</h3>
+        </div>
+    </div>
+: if !$login {
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4 text-center">
+            <div class="jumbotron">
+                <form action="/register" method="POST">
+                    <input type="text" id="inputName" name="name" class="form-control" placeholder="ハンドルネーム" required autofocus>
+                    <input type="email" id="inputEmail" name="email" class="form-control" placeholder="メールアドレス" required>
+                    <button type="submit" class="btn btn-primary" href="/register">参加登録へ</button>
+                </form>
             </div>
         </div>
     </div>
-</div>
-<div class="container">
+: }
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-　　　　    <a href="/announse_food"><img src="/static/img/1month.png" style="width: 100%;"></a>
-        </div>
-    </div>
-</div>
-<div class="container" id="detail">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="text-center infobox">
-                <h2>詳細情報</h2>
-<pre class="text-left">
+            <pre>
+というわけで！！！！
+
+いよいよ１か月前となりましたが参加表明はお済でしょうか？？？
+
+いつもの事となりますが
+
+信州オフ実行委員会からのお知らせです(^^♪
+
+
 ※追記事項もありますので既にご存知の方も今一度目を通していただけますと幸いです！！！
 
 
@@ -95,7 +157,7 @@
 ※他車種の方でも参加(見学)可能ですが駐車エリアは別となります。
 
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ☆飲食及びお土産などは施設内を利用できます！！(追記事項となります(^^))
 
 ◎焼肉について…
@@ -111,7 +173,7 @@
 ●ご希望の方は件名に【お弁当の件】と記載の上、エントリー時のお名前と個数を入れ下記メールアドレスまでお願いします。
 ●お弁当係メールアドレス　→　minmin4257@yahoo.co.jp
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ☆信州オフは事前エントリー制となっておりますので参加表明をお願いします！！
 
@@ -192,35 +254,22 @@
 行かずに後悔するより、行って一生の思い出を作りましょう！！！！
 
 ～第7回ソアラ信州オフはオフ会の旨を会場様と打ち合わせの上、会場使用の許可を取っております！！！～
-</pre>
-            </div>
+
+            </pre>
         </div>
     </div>
-</div>
-<div class="container">
+: if !$login {
     <div class="row">
-        <div class="col-md-4 link-box">
-            <div class="link-box-inner">ギャラリー
-                <a href="/gallery">
-                    <img src="/static/img/gallery.jpg">
-                </a>
-            </div>
-        </div>
-        <div class="col-md-4 link-box">
-            <div class="link-box-inner">チロルの森
-                <a href="http://www.tirol.gr.jp/" target="_blank">
-                    <img src="http://www.tirol.gr.jp/img/02.jpg" width="250px">
-                    <img src="http://www.tirol.gr.jp/img/05.jpg" width="250px" style="max-height: 108px;">
-                </a>
-            </div>
-        </div>
-        <div class="col-md-4 link-box">
-            <div class="link-box-inner">信州観光
-                <a href="http://www.shinshu-dc.net" target="_blank">
-                    <img src="/static/img/bl-007-1.jpg" width="250px">
-                </a>
+        <div class="col-md-4 col-md-offset-4 text-center">
+            <div class="jumbotron">
+                <form action="/register" method="POST">
+                    <input type="text" id="inputName" name="name" class="form-control" placeholder="ハンドルネーム" required autofocus>
+                    <input type="email" id="inputEmail" name="email" class="form-control" placeholder="メールアドレス" required>
+                    <button type="submit" class="btn btn-primary" href="/register">参加登録へ</button>
+                </form>
             </div>
         </div>
     </div>
+: }
 </div>
 : }
