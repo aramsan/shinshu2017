@@ -48,6 +48,15 @@ sub month1 {
     });
 }
 
+sub week2 {
+    my ($class, $c) = @_;
+
+    my $login = $c->session->get('login');
+    return $c->render('2week.tx', {
+        login => $login,
+    });
+}
+
 sub inquiry {
     my ($class, $c) = @_;
 
